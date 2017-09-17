@@ -1,0 +1,88 @@
+// WEB FONTS
+
+@font-face 
+	font-family: 'HelveticaNeue'
+	src: url('../fonts/HelveticaNeue.eot')
+	src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+// VARIABLE
+
+$font:   'HelveticaNeue', Arial, Helvetica, sans-serif
+$black:           #000
+$white:           #fff
+$bg-color:        #f1f1f1
+$blue:            #428bca
+$gray:            #333
+$light-gray:      #808080
+$break-small:     640px
+
+// BASE
+
+body
+  background-color: $bg-color
+  font-family: $font
+  font-size: 16px
+  padding-bottom: 2rem
+  
+header
+  font-size: 1.5rem
+  text-align: center
+  margin-bottom: 3rem
+   
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  
+h1
+  @media screen and (max-width: $break-small)
+    font-size: 2.2rem
+  
+// LAYOUT
+
+.container 
+  max-width: 900px
+  margin-right: auto
+  margin-left: auto
+
+// MODULE
+
+.box
+  margin: 20px auto
+  
+  img
+    display: block
+
+  .profile-img
+    margin-right: auto
+    margin-left: auto
+    border-radius: 50%
+    box-shadow:  0 1px 0 0 rgba(0,0,0,.8)
+  
+  .ratingImg
+    max-width: 140px
+    margin: 0 auto
+  
+  .box-text
+    margin-top: -2.3rem
+    padding: 2rem
+    background: $white
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1)
+    @media screen and (max-width: $break-small)
+      text-align: center
+    
+    h2, h4
+      text-align: center
+      
+    h2
+      margin-top: 0.8125rem
+      
+    h4
+      color: $light-gray
+      font-style: italic
+      font-weight: normal
+      margin-bottom: 0.3125rem
+      
+    h3
+      margin-top: 1.25rem
+    
